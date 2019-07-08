@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0FD87D22D2FA5D00C0F354 /* CreateEncryptedKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0FD87C22D2FA5D00C0F354 /* CreateEncryptedKeyVC.m */; };
+		FA2D872322CEEEE700949970 /* LoginEncryptedKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D872222CEEEE700949970 /* LoginEncryptedKeyViewController.m */; };
+		FA5F595022CDDC9800058DB5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F594F22CDDC9800058DB5 /* LoginViewController.m */; };
+		FA7A4E1722CD9E020039202D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E1622CD9E020039202D /* AppDelegate.m */; };
+		FA7A4E1D22CD9E020039202D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7A4E1B22CD9E020039202D /* Main.storyboard */; };
+		FA7A4E2022CD9E020039202D /* ZippiDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E1E22CD9E020039202D /* ZippiDemo.xcdatamodeld */; };
+		FA7A4E2222CD9E040039202D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7A4E2122CD9E040039202D /* Assets.xcassets */; };
+		FA7A4E2522CD9E040039202D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7A4E2322CD9E040039202D /* LaunchScreen.storyboard */; };
+		FA7A4E2822CD9E040039202D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E2722CD9E040039202D /* main.m */; };
+		FA7A4E3222CD9E040039202D /* ZippiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E3122CD9E040039202D /* ZippiDemoTests.m */; };
+		FA7A4E3D22CD9E040039202D /* ZippiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E3C22CD9E040039202D /* ZippiDemoUITests.m */; };
+		FA7A4E4C22CDB36A0039202D /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E4B22CDB36A0039202D /* MyTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7A4E2E22CD9E040039202D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7A4E0A22CD9E020039202D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7A4E1122CD9E020039202D;
+			remoteInfo = ZippiDemo;
+		};
+		FA7A4E3922CD9E040039202D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7A4E0A22CD9E020039202D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7A4E1122CD9E020039202D;
+			remoteInfo = ZippiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0FD87B22D2FA5D00C0F354 /* CreateEncryptedKeyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateEncryptedKeyVC.h; sourceTree = "<group>"; };
+		FA0FD87C22D2FA5D00C0F354 /* CreateEncryptedKeyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateEncryptedKeyVC.m; sourceTree = "<group>"; };
+		FA2D872122CEEEE700949970 /* LoginEncryptedKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginEncryptedKeyViewController.h; sourceTree = "<group>"; };
+		FA2D872222CEEEE700949970 /* LoginEncryptedKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginEncryptedKeyViewController.m; sourceTree = "<group>"; };
+		FA5F594E22CDDC9800058DB5 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FA5F594F22CDDC9800058DB5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FA7A4E1222CD9E020039202D /* ZippiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZippiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A4E1522CD9E020039202D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA7A4E1622CD9E020039202D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA7A4E1C22CD9E020039202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA7A4E1F22CD9E020039202D /* ZippiDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZippiDemo.xcdatamodel; sourceTree = "<group>"; };
+		FA7A4E2122CD9E040039202D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7A4E2422CD9E040039202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA7A4E2622CD9E040039202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7A4E2722CD9E040039202D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA7A4E2D22CD9E040039202D /* ZippiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZippiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A4E3122CD9E040039202D /* ZippiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZippiDemoTests.m; sourceTree = "<group>"; };
+		FA7A4E3322CD9E040039202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7A4E3822CD9E040039202D /* ZippiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZippiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7A4E3C22CD9E040039202D /* ZippiDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZippiDemoUITests.m; sourceTree = "<group>"; };
+		FA7A4E3E22CD9E040039202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7A4E4A22CDB36A0039202D /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		FA7A4E4B22CDB36A0039202D /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7A4E0F22CD9E020039202D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E2A22CD9E040039202D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E3522CD9E040039202D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA5F594C22CDDC2200058DB5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A4E4A22CDB36A0039202D /* MyTableViewController.h */,
+				FA7A4E4B22CDB36A0039202D /* MyTableViewController.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FA5F594D22CDDC6400058DB5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F594E22CDDC9800058DB5 /* LoginViewController.h */,
+				FA5F594F22CDDC9800058DB5 /* LoginViewController.m */,
+				FA2D872122CEEEE700949970 /* LoginEncryptedKeyViewController.h */,
+				FA2D872222CEEEE700949970 /* LoginEncryptedKeyViewController.m */,
+				FA0FD87B22D2FA5D00C0F354 /* CreateEncryptedKeyVC.h */,
+				FA0FD87C22D2FA5D00C0F354 /* CreateEncryptedKeyVC.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA7A4E0922CD9E020039202D = {
+			isa = PBXGroup;
+			children = (
+				FA7A4E1422CD9E020039202D /* ZippiDemo */,
+				FA7A4E3022CD9E040039202D /* ZippiDemoTests */,
+				FA7A4E3B22CD9E040039202D /* ZippiDemoUITests */,
+				FA7A4E1322CD9E020039202D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7A4E1322CD9E020039202D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A4E1222CD9E020039202D /* ZippiDemo.app */,
+				FA7A4E2D22CD9E040039202D /* ZippiDemoTests.xctest */,
+				FA7A4E3822CD9E040039202D /* ZippiDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7A4E1422CD9E020039202D /* ZippiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F594D22CDDC6400058DB5 /* Login */,
+				FA5F594C22CDDC2200058DB5 /* TableView */,
+				FA7A4E1522CD9E020039202D /* AppDelegate.h */,
+				FA7A4E1622CD9E020039202D /* AppDelegate.m */,
+				FA7A4E1B22CD9E020039202D /* Main.storyboard */,
+				FA7A4E2122CD9E040039202D /* Assets.xcassets */,
+				FA7A4E2322CD9E040039202D /* LaunchScreen.storyboard */,
+				FA7A4E2622CD9E040039202D /* Info.plist */,
+				FA7A4E2722CD9E040039202D /* main.m */,
+				FA7A4E1E22CD9E020039202D /* ZippiDemo.xcdatamodeld */,
+			);
+			path = ZippiDemo;
+			sourceTree = "<group>";
+		};
+		FA7A4E3022CD9E040039202D /* ZippiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A4E3122CD9E040039202D /* ZippiDemoTests.m */,
+				FA7A4E3322CD9E040039202D /* Info.plist */,
+			);
+			path = ZippiDemoTests;
+			sourceTree = "<group>";
+		};
+		FA7A4E3B22CD9E040039202D /* ZippiDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7A4E3C22CD9E040039202D /* ZippiDemoUITests.m */,
+				FA7A4E3E22CD9E040039202D /* Info.plist */,
+			);
+			path = ZippiDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7A4E1122CD9E020039202D /* ZippiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A4E4122CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemo" */;
+			buildPhases = (
+				FA7A4E0E22CD9E020039202D /* Sources */,
+				FA7A4E0F22CD9E020039202D /* Frameworks */,
+				FA7A4E1022CD9E020039202D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZippiDemo;
+			productName = ZippiDemo;
+			productReference = FA7A4E1222CD9E020039202D /* ZippiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA7A4E2C22CD9E040039202D /* ZippiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A4E4422CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemoTests" */;
+			buildPhases = (
+				FA7A4E2922CD9E040039202D /* Sources */,
+				FA7A4E2A22CD9E040039202D /* Frameworks */,
+				FA7A4E2B22CD9E040039202D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7A4E2F22CD9E040039202D /* PBXTargetDependency */,
+			);
+			name = ZippiDemoTests;
+			productName = ZippiDemoTests;
+			productReference = FA7A4E2D22CD9E040039202D /* ZippiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA7A4E3722CD9E040039202D /* ZippiDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7A4E4722CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemoUITests" */;
+			buildPhases = (
+				FA7A4E3422CD9E040039202D /* Sources */,
+				FA7A4E3522CD9E040039202D /* Frameworks */,
+				FA7A4E3622CD9E040039202D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7A4E3A22CD9E040039202D /* PBXTargetDependency */,
+			);
+			name = ZippiDemoUITests;
+			productName = ZippiDemoUITests;
+			productReference = FA7A4E3822CD9E040039202D /* ZippiDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7A4E0A22CD9E020039202D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Macbook;
+				TargetAttributes = {
+					FA7A4E1122CD9E020039202D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FA7A4E2C22CD9E040039202D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA7A4E1122CD9E020039202D;
+					};
+					FA7A4E3722CD9E040039202D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FA7A4E1122CD9E020039202D;
+					};
+				};
+			};
+			buildConfigurationList = FA7A4E0D22CD9E020039202D /* Build configuration list for PBXProject "ZippiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7A4E0922CD9E020039202D;
+			productRefGroup = FA7A4E1322CD9E020039202D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7A4E1122CD9E020039202D /* ZippiDemo */,
+				FA7A4E2C22CD9E040039202D /* ZippiDemoTests */,
+				FA7A4E3722CD9E040039202D /* ZippiDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7A4E1022CD9E020039202D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A4E2522CD9E040039202D /* LaunchScreen.storyboard in Resources */,
+				FA7A4E2222CD9E040039202D /* Assets.xcassets in Resources */,
+				FA7A4E1D22CD9E020039202D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E2B22CD9E040039202D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E3622CD9E040039202D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7A4E0E22CD9E020039202D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A4E1722CD9E020039202D /* AppDelegate.m in Sources */,
+				FA7A4E2822CD9E040039202D /* main.m in Sources */,
+				FA7A4E2022CD9E020039202D /* ZippiDemo.xcdatamodeld in Sources */,
+				FA7A4E4C22CDB36A0039202D /* MyTableViewController.m in Sources */,
+				FA5F595022CDDC9800058DB5 /* LoginViewController.m in Sources */,
+				FA0FD87D22D2FA5D00C0F354 /* CreateEncryptedKeyVC.m in Sources */,
+				FA2D872322CEEEE700949970 /* LoginEncryptedKeyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E2922CD9E040039202D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A4E3222CD9E040039202D /* ZippiDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7A4E3422CD9E040039202D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7A4E3D22CD9E040039202D /* ZippiDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7A4E2F22CD9E040039202D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7A4E1122CD9E020039202D /* ZippiDemo */;
+			targetProxy = FA7A4E2E22CD9E040039202D /* PBXContainerItemProxy */;
+		};
+		FA7A4E3A22CD9E040039202D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7A4E1122CD9E020039202D /* ZippiDemo */;
+			targetProxy = FA7A4E3922CD9E040039202D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA7A4E1B22CD9E020039202D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7A4E1C22CD9E020039202D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7A4E2322CD9E040039202D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7A4E2422CD9E040039202D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7A4E3F22CD9E040039202D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA7A4E4022CD9E040039202D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7A4E4222CD9E040039202D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA7A4E4322CD9E040039202D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA7A4E4522CD9E040039202D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZippiDemo.app/ZippiDemo";
+			};
+			name = Debug;
+		};
+		FA7A4E4622CD9E040039202D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZippiDemo.app/ZippiDemo";
+			};
+			name = Release;
+		};
+		FA7A4E4822CD9E040039202D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZippiDemo;
+			};
+			name = Debug;
+		};
+		FA7A4E4922CD9E040039202D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BU7RJ67C5;
+				INFOPLIST_FILE = ZippiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethergame.gs.ZippiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZippiDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7A4E0D22CD9E020039202D /* Build configuration list for PBXProject "ZippiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A4E3F22CD9E040039202D /* Debug */,
+				FA7A4E4022CD9E040039202D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7A4E4122CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A4E4222CD9E040039202D /* Debug */,
+				FA7A4E4322CD9E040039202D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7A4E4422CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A4E4522CD9E040039202D /* Debug */,
+				FA7A4E4622CD9E040039202D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7A4E4722CD9E040039202D /* Build configuration list for PBXNativeTarget "ZippiDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7A4E4822CD9E040039202D /* Debug */,
+				FA7A4E4922CD9E040039202D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA7A4E1E22CD9E020039202D /* ZippiDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA7A4E1F22CD9E020039202D /* ZippiDemo.xcdatamodel */,
+			);
+			currentVersion = FA7A4E1F22CD9E020039202D /* ZippiDemo.xcdatamodel */;
+			path = ZippiDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA7A4E0A22CD9E020039202D /* Project object */;
+}
