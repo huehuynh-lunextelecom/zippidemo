@@ -106,18 +106,15 @@
                                     <action selector="showPickerViewWallet:" destination="q1X-MP-44Y" eventType="touchUpInside" id="Xb2-P5-cTf"/>
                                 </connections>
                             </button>
-                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-za-8rM">
+                            <pickerView hidden="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-za-8rM">
                                 <rect key="frame" x="0.0" y="520" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="dYG-00-7xc"/>
-                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aNU-Od-Vfo" firstAttribute="centerY" secondItem="2Hl-vp-I5P" secondAttribute="centerY" id="0J9-Up-HBO"/>
-                            <constraint firstItem="kCh-za-8rM" firstAttribute="width" secondItem="5Pq-SC-SjF" secondAttribute="width" id="36m-iI-bOk"/>
                             <constraint firstItem="Wue-Mc-gjM" firstAttribute="trailing" secondItem="2Hl-vp-I5P" secondAttribute="trailing" constant="20" id="51T-U3-Zhi"/>
                             <constraint firstItem="Wue-Mc-gjM" firstAttribute="bottom" secondItem="17D-l7-aPc" secondAttribute="bottom" constant="20" id="5tc-u3-aJm"/>
                             <constraint firstItem="f5I-da-r3Q" firstAttribute="top" secondItem="IW2-gn-45k" secondAttribute="bottom" constant="41" id="6Mm-vh-ONa"/>
@@ -128,7 +125,6 @@
                             <constraint firstItem="IW2-gn-45k" firstAttribute="top" secondItem="Wue-Mc-gjM" secondAttribute="top" constant="41.999999999999986" id="HFq-gc-O6Z"/>
                             <constraint firstItem="2Hl-vp-I5P" firstAttribute="leading" secondItem="Wue-Mc-gjM" secondAttribute="leading" constant="20" id="IZz-Tb-ct8"/>
                             <constraint firstItem="aNU-Od-Vfo" firstAttribute="height" secondItem="2Hl-vp-I5P" secondAttribute="height" id="JVs-Kw-BHn"/>
-                            <constraint firstItem="kCh-za-8rM" firstAttribute="leading" secondItem="Wue-Mc-gjM" secondAttribute="leading" id="Jaj-Ye-DVT"/>
                             <constraint firstItem="aNU-Od-Vfo" firstAttribute="trailing" secondItem="2Hl-vp-I5P" secondAttribute="trailing" id="NRh-gZ-zKm"/>
                             <constraint firstItem="Wue-Mc-gjM" firstAttribute="trailing" secondItem="Vm8-af-f6A" secondAttribute="trailing" constant="19.666666666666686" id="OAX-8o-Qob"/>
                             <constraint firstItem="IW2-gn-45k" firstAttribute="centerX" secondItem="Wue-Mc-gjM" secondAttribute="centerX" id="OZy-sC-J0w"/>
@@ -137,17 +133,14 @@
                             <constraint firstItem="Wue-Mc-gjM" firstAttribute="bottom" secondItem="p5a-fg-pfK" secondAttribute="bottom" constant="20" id="f6y-eW-24b"/>
                             <constraint firstItem="Wue-Mc-gjM" firstAttribute="trailing" secondItem="17D-l7-aPc" secondAttribute="trailing" constant="20" id="mkv-8s-qiE"/>
                             <constraint firstItem="qsa-zV-8mW" firstAttribute="leading" secondItem="Wue-Mc-gjM" secondAttribute="leading" constant="20" id="sqs-TR-5EJ"/>
-                            <constraint firstItem="Wue-Mc-gjM" firstAttribute="trailing" secondItem="kCh-za-8rM" secondAttribute="trailing" id="t39-wU-wNm"/>
                             <constraint firstItem="aNU-Od-Vfo" firstAttribute="top" secondItem="2Hl-vp-I5P" secondAttribute="top" id="w4b-8O-2Cn"/>
                             <constraint firstItem="Vm8-af-f6A" firstAttribute="leading" secondItem="Wue-Mc-gjM" secondAttribute="leading" constant="20" id="wU2-d5-nXR"/>
-                            <constraint firstItem="Wue-Mc-gjM" firstAttribute="bottom" secondItem="kCh-za-8rM" secondAttribute="bottom" id="wWJ-n2-diH"/>
                             <constraint firstItem="f5I-da-r3Q" firstAttribute="leading" secondItem="Wue-Mc-gjM" secondAttribute="leading" constant="20" id="waa-ug-dCC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wue-Mc-gjM"/>
                     </view>
                     <navigationItem key="navigationItem" id="H30-Pt-h0p"/>
                     <connections>
-                        <outlet property="pickerViewWallet" destination="kCh-za-8rM" id="7Kl-2i-5Go"/>
                         <outlet property="tfIdWallet" destination="2Hl-vp-I5P" id="jVM-dc-ao3"/>
                         <outlet property="tfPassphraseWallet" destination="qsa-zV-8mW" id="Y52-rv-TKR"/>
                     </connections>
@@ -453,27 +446,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnPickWallet" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzS-5V-cvq">
-                                <rect key="frame" x="356" y="274" width="38" height="46"/>
-                                <accessibility key="accessibilityConfiguration" identifier="btnPickWallet"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="Pgr-1D-sO3"/>
-                                </constraints>
-                                <state key="normal" image="icon_down_arrow"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="trailing" secondItem="22M-u4-6i0" secondAttribute="trailing" constant="20" id="2bx-5i-rCN"/>
                             <constraint firstItem="GKl-aF-y3A" firstAttribute="centerX" secondItem="wDJ-qe-Utm" secondAttribute="centerX" id="5lj-y1-bQ6"/>
-                            <constraint firstItem="tzS-5V-cvq" firstAttribute="height" secondItem="czl-pj-Eqz" secondAttribute="height" id="6UX-TF-eCn"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="bottom" secondItem="Fy1-s5-U5f" secondAttribute="bottom" constant="20" id="6mV-lV-q70"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="bottom" secondItem="Ffb-hH-wUj" secondAttribute="bottom" constant="20" id="7oe-Xa-ijB"/>
                             <constraint firstItem="czl-pj-Eqz" firstAttribute="top" secondItem="22M-u4-6i0" secondAttribute="bottom" constant="23" id="ECi-Fu-jqu"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="trailing" secondItem="czl-pj-Eqz" secondAttribute="trailing" constant="20" id="Gg0-Mg-TRF"/>
                             <constraint firstItem="LdU-ZA-Yjj" firstAttribute="leading" secondItem="wDJ-qe-Utm" secondAttribute="leading" constant="20" id="IEN-5g-xkJ"/>
-                            <constraint firstItem="tzS-5V-cvq" firstAttribute="centerY" secondItem="czl-pj-Eqz" secondAttribute="centerY" id="IKb-w0-gUs"/>
-                            <constraint firstItem="tzS-5V-cvq" firstAttribute="top" secondItem="czl-pj-Eqz" secondAttribute="top" id="JZ3-rH-psN"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="trailing" secondItem="LdU-ZA-Yjj" secondAttribute="trailing" constant="19.666666666666686" id="KwM-ex-o6m"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="trailing" secondItem="Fy1-s5-U5f" secondAttribute="trailing" constant="20" id="M8M-8a-frX"/>
                             <constraint firstItem="22M-u4-6i0" firstAttribute="top" secondItem="GKl-aF-y3A" secondAttribute="bottom" constant="41" id="Olu-Xw-h3K"/>
@@ -483,7 +465,6 @@
                             <constraint firstItem="czl-pj-Eqz" firstAttribute="leading" secondItem="wDJ-qe-Utm" secondAttribute="leading" constant="20" id="gZl-ny-rHN"/>
                             <constraint firstItem="LdU-ZA-Yjj" firstAttribute="top" secondItem="czl-pj-Eqz" secondAttribute="bottom" constant="14" id="grR-vV-fw8"/>
                             <constraint firstItem="wDJ-qe-Utm" firstAttribute="trailing" secondItem="FFU-Yo-BTB" secondAttribute="trailing" constant="19.666666666666686" id="kg5-yd-4Og"/>
-                            <constraint firstItem="tzS-5V-cvq" firstAttribute="trailing" secondItem="czl-pj-Eqz" secondAttribute="trailing" id="luF-KI-67V"/>
                             <constraint firstItem="GKl-aF-y3A" firstAttribute="top" secondItem="wDJ-qe-Utm" secondAttribute="top" constant="41.999999999999986" id="oGC-gq-xq0"/>
                             <constraint firstItem="FFU-Yo-BTB" firstAttribute="top" secondItem="LdU-ZA-Yjj" secondAttribute="bottom" constant="14" id="pBd-yT-sBs"/>
                         </constraints>
@@ -539,7 +520,6 @@
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="d4l-dZ-nGD"/>
-                                    <constraint firstAttribute="height" constant="46" id="iX2-wD-2Pp"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>

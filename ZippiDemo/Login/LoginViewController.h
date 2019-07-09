@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyPickerCustomView.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
+@interface LoginViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, MyPickerCustomViewDelegate>
 - (IBAction)actionCreateWallet:(id)sender;
 - (IBAction)actionLoginByEncryptedKey:(id)sender;
 
@@ -20,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)loginWithSavedWallet:(id)sender;
 - (IBAction)showPickerViewWallet:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIPickerView *pickerViewWallet;
-@property (strong, nonatomic) UITextField *dummyTextField;
+//@property (strong, nonatomic) IBOutlet UIPickerView *pickerViewWallet;
+//@property (strong, nonatomic) UITextField *dummyTextField;
 
 @end
 

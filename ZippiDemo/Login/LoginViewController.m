@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 
+
 @interface LoginViewController ()
 {
     //fake data picker view
@@ -15,6 +16,8 @@
 }
 @property(weak,nonatomic) NSString *idWallet;
 @property(weak,nonatomic) NSString *passPhraseWallet;
+@property(retain,nonatomic) MyPickerCustomView *walletPickerView;
+
 @end
 
 @implementation LoginViewController
@@ -29,6 +32,10 @@
     //fake data
     self.idWallet = @"1";
     self.passPhraseWallet = @"1";
+    
+    //setup textfield for enter key
+    [self.tfIdWallet setDelegate:self];
+    [self.tfPassphraseWallet setDelegate:self];
     
     //wallet pickerview
     [self setUpPickerViewWallet];
@@ -89,50 +96,50 @@
 }
 
 - (IBAction)showPickerViewWallet:(id)sender {
- //   [self.pickerViewWallet setUserInteractionEnabled:YES];
-    self.pickerViewWallet.hidden = NO;
+    [_walletPickerView setHidden:NO];
+    [_walletPickerView showWithAnimRunUp];
 }
 
 -(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
 
-// pickerview datasource methods
-- (NSInteger)numberOfComponentsInPickerView:(nonnull UIPickerView *)pickerView {
-    return 1;
-}
-
-- (NSInteger)pickerView:(nonnull UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return pvWalletData.count;
-}
-//------
-
-// pickerview delegate methods
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return pvWalletData[row];
-}
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    self.tfIdWallet.text = pvWalletData[row];
-}
+//// pickerview datasource methods
+//- (NSInteger)numberOfComponentsInPickerView:(nonnull UIPickerView *)pickerView {
+//    return 1;
+//}
+//
+//- (NSInteger)pickerView:(nonnull UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+//    return pvWalletData.count;
+//}
+////------
+//
+//// pickerview delegate methods
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+//    return pvWalletData[row];
+//}
+//
+//- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+////    self.tfIdWallet.text = pvWalletData[row];
+//    self.selectedWallet = pvWalletData[row];
+//}
 
 //custom wallet pickerview
 -(void)setUpPickerViewWallet{
-//    UIPickerView* pvWallet = [UIPickerView new];
-//    self.tfIdWallet.inputView = pvWallet;
-
-    //setup picker view
-    self.pickerViewWallet.dataSource = self;
-    self.pickerViewWallet.delegate = self;
-    self.pickerViewWallet.showsSelectionIndicator = YES;
-    
+    NSLog(@"setUpPickerViewWallet");
     pvWalletData = @[@"111", @"112", @"113", @"114", @"115", @"116"];
     
-    // next step is to write this configure method getting called here
-    [self configurePickerWalletSubviews];
+    _walletPickerView = [[MyPickerCustomView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.origin.x, [UIScreen mainScreen].bounds.size.height - 216, [UIScreen mainScreen].bounds.size.width, 216)];
     
-    // lastly, add the dummyTextField to your view.
-    [self.view addSubview:self.dummyTextField];
+    _walletPickerView.delegate = self;
+    [_walletPickerView initDataPickerView:pvWalletData];
+    
+    [_walletPickerView initPickerView:44];
+    [_walletPickerView setHidden:YES];
+    [_walletPickerView hideWithAnimRunDown];
+    
+    [self.view addSubview:_walletPickerView];
+    
 }
 
 -(void)onClickWalletPickerDone{
@@ -143,57 +150,34 @@
     
 }
 
-- (void)configurePickerWalletSubviews {
-    // A UIPickerView must be added as an inputView to a UITextField in order to be displayed on button tap
-    // So you need to create a dummyTextField to do so.
-    self.dummyTextField = [UITextField new];
-    
-    // Create a toolbar to add a done button
-    UIToolbar *toolBar= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,44)];
-    [toolBar setBarStyle:UIBarStyleDefault];
-    
-    //add button done
-//    UIBarButtonItem* btnDone = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(onClickWalletPickerDone)];
-    
-    UIButton* btnDone = [[UIButton alloc] init];
-//    btnDone.
-    
-    UIBarButtonItem* btnCancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(onClickWalletPickerCancel)];
-    
-    UIBarButtonItem* title = [[UIBarButtonItem alloc] initWithTitle:@"Select a Wallet" style:UIBarButtonItemStylePlain target:self action:nil];
-    
-    
-    
-    toolBar.items = @[btnCancel, title, btnDone];
-    title.tintColor = [UIColor blueColor];
-    
- //   title.tintColor = [UIColor colorWithRed:1/255 green:1/255 blue:1/255 alpha:255/255];
-    [self.pickerViewWallet addSubview:toolBar];
-    
-    
-//    UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(locationPressed)];
-    
-//    // Create a flex space so that done button will be right aligned
-//    UIBarButtonItem *flex = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-//    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(dismissPicker)];
-//    toolBar.items = @[cancel, flex, done];
-//    done.tintColor = [UIColor blackColor];
-//
-//    [self.pickerViewWallet addSubview:toolBar];
-//
-//    // Create an input view to add picker + done button as subviews
-//    UIView *inputView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, self.pickerViewWallet.frame.size.height + 44)];
-//    [self.pickerViewWallet setFrame:CGRectMake(0, 0, inputView.frame.size.width, inputView.frame.size.height)];
-//    inputView.backgroundColor = [UIColor clearColor];
-//    [inputView addSubview:self.pickerViewWallet];
-//    [inputView addSubview:toolBar];
-//
-//    // Set custom inputView as container for picker view
-//    self.dummyTextField.inputView = inputView;
-//
-//    // Hiding the textfield will hide the picker
-//    [self.dummyTextField setHidden:YES];
-}
 //------
+
+-(void) tapInLeft {
+    NSLog(@"Login View Handle tapInLeft");
+    if(_walletPickerView == nil) return;
+        
+    //cancel select wallet in picker view
+    
+    [_walletPickerView hideWithAnimRunDown];
+}
+
+-(void) tapInRight {
+    NSLog(@"Login View Handle tapInRight");
+    if(_walletPickerView == nil) return;
+    
+    //done select wallet in picker view
+    if(_walletPickerView.idWallet != nil){
+        _tfIdWallet.text = _walletPickerView.idWallet;
+    }
+//    [_walletPickerView setHidden:YES];
+    [_walletPickerView hideWithAnimRunDown];
+}
+
+//texfield enter key
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 @end

@@ -19,6 +19,7 @@
 		FA7A4E3222CD9E040039202D /* ZippiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E3122CD9E040039202D /* ZippiDemoTests.m */; };
 		FA7A4E3D22CD9E040039202D /* ZippiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E3C22CD9E040039202D /* ZippiDemoUITests.m */; };
 		FA7A4E4C22CDB36A0039202D /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E4B22CDB36A0039202D /* MyTableViewController.m */; };
+		FAD1653B22D4366B00873666 /* MyPickerCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1653922D4366B00873666 /* MyPickerCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		FA7A4E3E22CD9E040039202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7A4E4A22CDB36A0039202D /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		FA7A4E4B22CDB36A0039202D /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		FAD1653922D4366B00873666 /* MyPickerCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPickerCustomView.m; sourceTree = "<group>"; };
+		FAD1653A22D4366B00873666 /* MyPickerCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPickerCustomView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		FA7A4E1422CD9E020039202D /* ZippiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1653822D4366B00873666 /* Views */,
 				FA5F594D22CDDC6400058DB5 /* Login */,
 				FA5F594C22CDDC2200058DB5 /* TableView */,
 				FA7A4E1522CD9E020039202D /* AppDelegate.h */,
@@ -164,6 +168,15 @@
 				FA7A4E3E22CD9E040039202D /* Info.plist */,
 			);
 			path = ZippiDemoUITests;
+			sourceTree = "<group>";
+		};
+		FAD1653822D4366B00873666 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1653A22D4366B00873666 /* MyPickerCustomView.h */,
+				FAD1653922D4366B00873666 /* MyPickerCustomView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7A4E1722CD9E020039202D /* AppDelegate.m in Sources */,
+				FAD1653B22D4366B00873666 /* MyPickerCustomView.m in Sources */,
 				FA7A4E2822CD9E040039202D /* main.m in Sources */,
 				FA7A4E2022CD9E020039202D /* ZippiDemo.xcdatamodeld in Sources */,
 				FA7A4E4C22CDB36A0039202D /* MyTableViewController.m in Sources */,
